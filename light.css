@@ -1,5 +1,5 @@
 :root {
-  --font-size: 13;
+  --font-size: 14;
   --font-weight: normal;
   --font: Monaco, Source Code Pro, sans;
   --padding: 2px;
@@ -52,6 +52,8 @@
   background: var(--bg);
   border: none;
   box-shadow: var(--shadow);
+  width: 80%;
+  margin-left: calc(10%);
 }
 
 /* Animate Slide in */
@@ -73,8 +75,8 @@
   box-shadow: none;
   color: var(--fg);
   font-family: var(--font);
-  font-size: 18px;
-  /* font-size: var(--font-size); */
+  /* font-size: 18px; */
+  font-size: var(--font-size);
   font-weight: var(--font-weight);
 }
 
@@ -90,6 +92,10 @@
   border-top: 1px solid var(--border);
   margin: 0;
   padding: var(--padding);
+}
+
+#vomnibar ul li:nth-child(n+6) {
+  display: none;
 }
 
 #vomnibar li {
